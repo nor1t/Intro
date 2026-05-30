@@ -1,20 +1,19 @@
-# Norit Qyqalla - Professional Portfolio
+Norit Qyqalla - Professional Portfolio
 
-A modern, professional React-based portfolio website with a cyberpunk aesthetic. Built with TypeScript, Vite, and modern React patterns.
+A modern, professional React-based portfolio website with a colorfull aesthetic. Built with TypeScript, Vite, and modern React patterns.
 
-## Features
+Features:
 
-- ✨ **Cyberpunk Design**: Dark theme with neon accents (green, cyan, pink, yellow)
-- 🎨 **Smooth Animations**: 3D card effects, reveal animations, and floating shapes
-- 📱 **Responsive**: Mobile-optimized layout
-- ⚡ **Fast Loading**: Built with Vite for optimal performance
-- 🎯 **TypeScript**: Fully typed for better DX
-- 📊 **Interactive Components**: Scroll-triggered animations, animated counters
-- ♿ **Accessible**: ARIA labels, semantic HTML, focus management
+- Dark theme with neon accents (green, cyan, pink, yellow)
+- 3D card effects, reveal animations, and floating shapes
+- Mobile-optimized layout
+- Built with Vite for optimal performance
+- Fully typed for better DX
+- Scroll-triggered animations, animated counters
+- ARIA labels, semantic HTML, focus management
 
-## Project Structure
+Project Structure
 
-```
 src/
 ├── components/          # React components
 │   ├── BootScreen.tsx   # Loading animation
@@ -32,56 +31,8 @@ src/
 │   └── global.css     # CSS with animations
 ├── App.tsx            # Main app component
 └── main.tsx           # React entry point
-```
 
-## Getting Started
 
-### Prerequisites
-- Node.js 16+
-- npm or yarn
-
-### Installation
-
-1. Install dependencies:
-```bash
-npm install
-```
-
-2. Start the development server:
-```bash
-npm run dev
-```
-
-3. Open http://localhost:5173 in your browser
-
-### Build for Production
-
-```bash
-npm run build
-```
-
-The optimized build will be in the `dist/` directory.
-
-## Customization
-
-### Update Profile Data
-Edit `src/constants/index.ts` to update:
-- Profile name, title, description
-- Social media links
-- Skills and expertise levels
-- Project information
-- Statistics
-
-### Modify Styling
-- Global styles: `src/styles/global.css`
-- CSS variables for colors are defined in `:root`
-- Customize animations and theme colors
-
-### Add/Remove Sections
-All sections are modular components in `src/components/`. Easily add new sections by:
-1. Creating a new component
-2. Adding it to `src/components/index.ts`
-3. Importing and using it in `src/App.tsx`
 
 ## Browser Support
 

@@ -13,7 +13,7 @@ Features:
 - ARIA labels, semantic HTML, focus management
 
 Project Structure
-
+```
 src/
 ├── components/          # React components
 │   ├── BootScreen.tsx   # Loading animation
@@ -32,7 +32,7 @@ src/
 ├── App.tsx            # Main app component
 └── main.tsx           # React entry point
 
-
+```
 
 ## Browser Support
 

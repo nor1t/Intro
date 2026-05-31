@@ -11,7 +11,7 @@ import {
   SkillGrid,
   StatCounter,
 } from './components'
-import { PROFILE_DATA, PROJECTS, SKILLS, STATS } from './constants'
+import { PROFILE_DATA, PROJECTS, STATS } from './constants'
 
 const App: FC = () => {
   const [booted, setBooted] = useState(false)

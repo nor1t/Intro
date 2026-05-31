@@ -58,10 +58,10 @@ export const BootScreen: FC<BootScreenProps> = ({ onDone }) => {
   }, [showBar])
 
   useEffect(() => {
-    if (finished) {
-      const timer = setTimeout(onDone, 500)
-      return () => clearTimeout(timer)
-    }
+    if (!finished) return
+
+    const timer = setTimeout(onDone, 500)
+    return () => clearTimeout(timer)
   }, [finished, onDone])
 
   return (

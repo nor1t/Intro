@@ -1,16 +1,8 @@
-# Norit Qyqalla - Professional Portfolio
+# Norit Qyqalla - Personal Portfolio
 
 A modern, React-based portfolio website with a futuristic terminal-inspired design. Built with TypeScript, Vite, and polished UI animations for a strong personal brand experience.
 
-## Latest Updates
-
-- Added a full-screen boot screen with animated startup messages
-- Introduced new sections for About, Skills, Projects, Education, and Contact
-- Added animated counters, reveal-on-scroll transitions, floating background shapes, and structured navigation dots
-- Integrated a terminal-style contact experience with direct social links
-- Refined the visual system with neon accents, glassy cards, and responsive layouts
-
-## Features
+Features:
 
 - Dark neon-themed interface with green, cyan, pink, and yellow accents
 - Smooth reveal animations and motion-enhanced components
@@ -19,7 +11,7 @@ A modern, React-based portfolio website with a futuristic terminal-inspired desi
 - Fast development workflow powered by Vite
 - Semantic sections for profile, skills, projects, education, and contact
 
-## Tech Stack
+Tech Stack:
 
 - React 18
 - TypeScript
@@ -27,7 +19,7 @@ A modern, React-based portfolio website with a futuristic terminal-inspired desi
 - CSS with custom variables and animations
 - Font Awesome icons
 
-## Project Structure
+Project Structure
 
 ```text
 src/
@@ -39,29 +31,13 @@ src/
 └── main.tsx            # Application entry point
 ```
 
-## Getting Started
 
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
-2. Start the development server:
-   ```bash
-   npm run dev
-   ```
-3. Build for production:
-   ```bash
-   npm run build
-   ```
 
-## Deployment
+Deployment
 
-This project is ready to be deployed on Vercel, Netlify, or any static hosting platform.
+This project is already deployed on Vercel.
 
-## Author
+Author
 
 Norit Qyqalla - Full-Stack Engineer
 
----
-
-Version: 2.1.0 | Last Updated: 2026-07-02

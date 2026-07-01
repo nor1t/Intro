@@ -1,72 +1,62 @@
-Norit Qyqalla - Professional Portfolio
+# Norit Qyqalla - Professional Portfolio
 
-A modern, professional React-based portfolio website with a colorfull aesthetic. Built with TypeScript, Vite, and modern React patterns.
+A modern, React-based portfolio website with a futuristic terminal-inspired design. Built with TypeScript, Vite, and polished UI animations for a strong personal brand experience.
 
-Features:
+## Latest Updates
 
-- Dark theme with neon accents (green, cyan, pink, yellow)
-- 3D card effects, reveal animations, and floating shapes
-- Mobile-optimized layout
-- Built with Vite for optimal performance
-- Fully typed for better DX
-- Scroll-triggered animations, animated counters
-- ARIA labels, semantic HTML, focus management
+- Added a full-screen boot screen with animated startup messages
+- Introduced new sections for About, Skills, Projects, Education, and Contact
+- Added animated counters, reveal-on-scroll transitions, floating background shapes, and structured navigation dots
+- Integrated a terminal-style contact experience with direct social links
+- Refined the visual system with neon accents, glassy cards, and responsive layouts
 
-Project Structure
-```
-src/
-├── components/          # React components
-│   ├── BootScreen.tsx   # Loading animation
-│   ├── ProfileCard.tsx  # Hero profile section
-│   ├── SkillGrid.tsx    # Skills hexagon grid
-│   ├── ProjectCard.tsx  # Project cards
-│   ├── NavDots.tsx      # Section navigation
-│   ├── FloatingShapes.tsx # Background animation
-│   └── ...
-├── hooks/              # Custom React hooks
-│   └── index.ts        # useIntersectionObserver, useMouseMove3D, useCountUp
-├── constants/          # Data and theme constants
-│   └── index.ts
-├── styles/            # Global styles
-│   └── global.css     # CSS with animations
-├── App.tsx            # Main app component
-└── main.tsx           # React entry point
+## Features
 
-```
-
-## Browser Support
-
-- Chrome/Edge (latest)
-- Firefox (latest)
-- Safari (latest)
-
-## Performance
-
-- **Vite**: Fast HMR and optimized builds
-- **Code Splitting**: Components are automatically code-split
-- **Tree Shaking**: Unused code is removed
-- **CSS**: Global CSS with optimized animations
+- Dark neon-themed interface with green, cyan, pink, and yellow accents
+- Smooth reveal animations and motion-enhanced components
+- Mobile-friendly responsive design
+- Fully typed React app with TypeScript
+- Fast development workflow powered by Vite
+- Semantic sections for profile, skills, projects, education, and contact
 
 ## Tech Stack
 
-- **React 18**: Latest React with hooks
-- **TypeScript**: Type safety and better DX
-- **Vite**: Next-generation frontend tooling
-- **CSS**: Custom CSS with CSS variables and animations
-- **Intersection Observer API**: For scroll-triggered animations
+- React 18
+- TypeScript
+- Vite
+- CSS with custom variables and animations
+- Font Awesome icons
 
-## Future Enhancements
+## Project Structure
 
-- [ ] Dark/Light mode toggle
-- [ ] Email contact form
-- [ ] Blog section
-- [ ] Project filtering
-- [ ] Internationalization (i18n)
-- [ ] Animation preferences
+```text
+src/
+├── components/          # UI sections and animated components
+├── constants/          # Profile, skills, projects, and theme data
+├── hooks/              # Reusable animation and interaction hooks
+├── styles/             # Global styling and theme definitions
+├── App.tsx             # Main portfolio layout
+└── main.tsx            # Application entry point
+```
 
-## License
+## Getting Started
 
-MIT
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Start the development server:
+   ```bash
+   npm run dev
+   ```
+3. Build for production:
+   ```bash
+   npm run build
+   ```
+
+## Deployment
+
+This project is ready to be deployed on Vercel, Netlify, or any static hosting platform.
 
 ## Author
 
@@ -74,4 +64,4 @@ Norit Qyqalla - Full-Stack Engineer
 
 ---
 
-**Version**: 2.1.0 | **Last Updated**: 2026
+Version: 2.1.0 | Last Updated: 2026-07-02

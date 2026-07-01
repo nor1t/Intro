@@ -601,6 +601,75 @@ body::after {
   transform: translateY(0);
 }
 
+/* === PROJECT TAGS === */
+.project-tag {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-family: var(--font-mono);
+  color: var(--muted);
+  padding: 3px 8px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--bg-card);
+  transition: all 0.2s;
+}
+
+.project-tag:hover {
+  border-color: rgba(0, 255, 136, 0.3);
+  color: var(--green);
+}
+
+/* === ABOUT SECTION === */
+.about-paragraph {
+  color: var(--text);
+  font-size: 0.88rem;
+  line-height: 1.85;
+  opacity: 0.85;
+  padding-left: 1rem;
+  border-left: 2px solid var(--border);
+}
+
+.about-highlight {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1rem;
+  transition: all 0.25s;
+}
+
+.about-highlight:hover {
+  border-color: rgba(0, 255, 136, 0.3);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* === EDUCATION TIMELINE === */
+.edu-node {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--bg-card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.edu-card {
+  flex: 1;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  transition: all 0.25s;
+}
+
+.edu-card:hover {
+  border-color: rgba(0, 255, 136, 0.25);
+  transform: translateX(4px);
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 5px;

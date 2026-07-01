@@ -1,17 +1,19 @@
 import { FC, useState } from 'react'
 import {
+  AboutSection,
   BootScreen,
   ContactTerminal,
+  EducationSection,
   FloatingShapes,
   NavDots,
   PowerBars,
   ProfileCard,
-  ProjectCard,
+  ProjectShowcase,
   RevealSection,
   SkillGrid,
   StatCounter,
 } from './components'
-import { PROFILE_DATA, PROJECTS, STATS } from './constants'
+import { ABOUT, PROFILE_DATA, STATS } from './constants'
 
 const App: FC = () => {
   const [booted, setBooted] = useState(false)
@@ -98,6 +100,20 @@ const App: FC = () => {
           </RevealSection>
         </section>
 
+        {/* ===== ABOUT ===== */}
+        <section id="about" style={{ padding: '5rem 1.5rem', borderTop: '1px solid var(--border)' }}>
+          <RevealSection style={{ textAlign: 'center', marginBottom: '3rem' }}>
+            <div className="section-tag">{ABOUT.tag}</div>
+            <h2 className="section-title" style={{ color: 'var(--text)' }}>
+              {ABOUT.title}
+            </h2>
+          </RevealSection>
+
+          <RevealSection>
+            <AboutSection />
+          </RevealSection>
+        </section>
+
         {/* ===== SKILLS ===== */}
         <section id="skills" style={{ padding: '5rem 1.5rem', borderTop: '1px solid var(--border)' }}>
           <RevealSection style={{ textAlign: 'center', marginBottom: '3rem' }}>
@@ -127,30 +143,23 @@ const App: FC = () => {
             </h2>
           </RevealSection>
 
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-              gap: '16px',
-              maxWidth: '700px',
-              margin: '0 auto',
-            }}
-          >
-            {PROJECTS.map((project, i) => (
-              <RevealSection key={project.name}>
-                <ProjectCard
-                  name={project.name}
-                  description={project.description}
-                  language={project.language}
-                  languageColor={project.languageColor}
-                  stars={project.stars}
-                  forks={project.forks}
-                  url={project.url}
-                  index={i}
-                />
-              </RevealSection>
-            ))}
-          </div>
+          <RevealSection>
+            <ProjectShowcase />
+          </RevealSection>
+        </section>
+
+        {/* ===== EDUCATION ===== */}
+        <section id="education" style={{ padding: '5rem 1.5rem', borderTop: '1px solid var(--border)' }}>
+          <RevealSection style={{ textAlign: 'center', marginBottom: '3rem' }}>
+            <div className="section-tag">// KNOWLEDGE BASE</div>
+            <h2 className="section-title" style={{ color: 'var(--text)' }}>
+              EDUCATION
+            </h2>
+          </RevealSection>
+
+          <RevealSection>
+            <EducationSection />
+          </RevealSection>
         </section>
 
         {/* ===== CONTACT ===== */}

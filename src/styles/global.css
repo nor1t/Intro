@@ -20,6 +20,8 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
@@ -27,7 +29,14 @@ body {
   background: var(--bg);
   color: var(--text);
   overflow-x: hidden;
+  overscroll-behavior-x: none;
   min-height: 100vh;
+  max-width: 100%;
+}
+
+#root {
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 /* Scanline overlay */

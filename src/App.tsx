@@ -1,7 +1,8 @@
-import { FC, useState } from 'react'
+import { FC, useState, useEffect } from 'react'
 import {
   AboutSection,
   BootScreen,
+  CertificatesSection,
   ContactTerminal,
   EducationSection,
   FloatingShapes,
@@ -17,19 +18,112 @@ import { ABOUT, PROFILE_DATA, STATS } from './constants'
 
 const App: FC = () => {
   const [booted, setBooted] = useState(false)
+  const [page, setPage] = useState<'main' | 'certificates'>('main')
 
+  // Scroll to top when switching to certificates page
+  useEffect(() => {
+    if (page === 'certificates') {
+      window.scrollTo({ top: 0, behavior: 'instant' as ScrollBehavior })
+    }
+  }, [page])
+
+  // Show boot screen on initial load
+  if (!booted) {
+    return <BootScreen onDone={() => setBooted(true)} />
+  }
+
+  // =====================
+  // CERTIFICATES PAGE
+  // =====================
+  if (page === 'certificates') {
+    return (
+      <>
+        <div className="grid-bg"></div>
+        <FloatingShapes />
+
+        <div style={{ position: 'relative', zIndex: 1, padding: '2rem 1.5rem', minHeight: '100vh' }}>
+          {/* Ambient glow */}
+          <div
+            style={{
+              position: 'absolute',
+              top: '10%',
+              left: '50%',
+              transform: 'translate(-50%, 0)',
+              width: '600px',
+              height: '300px',
+              background:
+                'radial-gradient(ellipse, rgba(255,225,77,0.04) 0%, rgba(0,255,136,0.02) 40%, transparent 70%)',
+              pointerEvents: 'none',
+            }}
+          />
+
+          {/* Back button */}
+          <div style={{ maxWidth: '960px', margin: '0 auto 2rem' }}>
+            <button
+              onClick={() => {
+                setPage('main')
+                setTimeout(() => {
+                  document.getElementById('education')?.scrollIntoView({ behavior: 'smooth' })
+                }, 50)
+              }}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '8px',
+                padding: '8px 18px',
+                background: 'var(--bg-card)',
+                border: '1px solid var(--border)',
+                borderRadius: '8px',
+                color: 'var(--muted)',
+                fontFamily: 'var(--font-mono)',
+                fontSize: '0.75rem',
+                cursor: 'pointer',
+                transition: 'all 0.25s',
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = 'var(--green)'
+                e.currentTarget.style.color = 'var(--green)'
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = 'var(--border)'
+                e.currentTarget.style.color = 'var(--muted)'
+              }}
+            >
+              <i className="fa-solid fa-arrow-left" style={{ fontSize: '0.7rem' }}></i>
+              Back to Profile
+            </button>
+          </div>
+
+          <CertificatesSection />
+
+          {/* Footer */}
+          <footer style={{ marginTop: '4rem', borderTop: '1px solid var(--border)', padding: '2rem 1.5rem', textAlign: 'center' }}>
+            <p
+              style={{
+                color: '#333',
+                fontSize: '0.72rem',
+                fontFamily: 'var(--font-mono)',
+              }}
+            >
+              <span style={{ color: 'var(--green)', opacity: 0.5 }}>{'</>'}</span> NORIT_QYQALLA.PROFILE v2.1.0
+            </p>
+          </footer>
+        </div>
+      </>
+    )
+  }
+
+  // =====================
+  // MAIN PAGE
+  // =====================
   return (
     <>
-      {!booted && <BootScreen onDone={() => setBooted(true)} />}
-
       <div className="grid-bg"></div>
       <FloatingShapes />
       <NavDots />
 
       <div
         style={{
-          opacity: booted ? 1 : 0,
-          transition: 'opacity 0.6s ease 0.2s',
           position: 'relative',
           zIndex: 1,
         }}
@@ -158,7 +252,7 @@ const App: FC = () => {
           </RevealSection>
 
           <RevealSection>
-            <EducationSection />
+            <EducationSection onCertificatesClick={() => setPage('certificates')} />
           </RevealSection>
         </section>
 
@@ -221,7 +315,7 @@ const App: FC = () => {
               fontFamily: 'var(--font-mono)',
             }}
           >
-            <span style={{ color: 'var(--green)', opacity: 0.5 }}>&lt;/&gt;</span> NORIT_QYQALLA.PROFILE v2.1.0
+            <span style={{ color: 'var(--green)', opacity: 0.5 }}>{'</>'}</span> NORIT_QYQALLA.PROFILE v2.1.0
           </p>
         </footer>
       </div>

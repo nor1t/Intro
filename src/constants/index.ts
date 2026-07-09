@@ -17,10 +17,10 @@ export const ABOUT = {
   tag: '// IDENTITY.LOG',
   title: 'ABOUT ME',
   paragraphs: [
-    "I'm a full-stack engineer based in Kosovo, focused on building performant web and mobile applications that don't just work — they feel good to use. My journey started with curiosity about how things run under the hood, and it evolved into a career of shipping production software end-to-end.",
-    "On the frontend, I work primarily with React, React Native, and TypeScript, crafting interfaces that are fast, accessible, and visually sharp. On the backend, I lean on C#, SQL, and Node.js to design APIs and data pipelines that scale. I care deeply about clean architecture, type safety, and developer experience.",
-    "Beyond day-to-day engineering, I'm drawn to data and machine learning. I've built projects with Python and PySpark for data processing and experimentation, and I enjoy the crossover between applied ML and product features. I treat every project as a chance to learn something new and raise the bar.",
-    "When I'm not coding, you'll find me exploring new tools, contributing to open source, and mentoring others in the local dev community. I believe great software is built by people who stay curious, communicate well, and ship with intent.",
+    "I'm a full-stack engineer based in Kosovo with a passion for building web and mobile applications that are reliable, performant, and enjoyable to use. I enjoy working across the entire stack, from designing intuitive user interfaces to building the backend systems that power them.",
+    "My primary frontend tools are React, React Native, and TypeScript, where I focus on creating responsive, accessible, and maintainable applications. On the backend, I work with C#, Node.js, and SQL to develop scalable APIs and data-driven systems. I value clean architecture, strong typing, and writing code that's easy to understand and maintain.",
+    "I'm also interested in data engineering and machine learning. I've worked with Python and PySpark on projects involving data processing, analytics, and experimentation, and I enjoy finding practical ways to bring data-driven features into real products. For me, every project is an opportunity to improve my skills and explore new technologies.",
+    "Outside of work, I like experimenting with new tools and frameworks, contributing to open-source projects when I can, and sharing knowledge with other developers in the local community. I believe the best software comes from people who keep learning, collaborate well, and take pride in building things that last.",
   ],
   highlights: [
     { icon: 'fa-solid fa-rocket', label: 'End-to-end shipping', value: 'From idea to production' },
@@ -67,7 +67,7 @@ export const PROJECTS = [
     stars: 1,
     forks: 0,
     url: 'https://github.com/nor1t/LFGconnect',
-    tags: ['React Native', 'Firebase', 'Realtime'],
+    tags: ['ReactNative', 'Firebase', 'Realtime'],
     featured: true,
   },
   {
@@ -79,7 +79,7 @@ export const PROJECTS = [
     stars: 0,
     forks: 0,
     url: 'https://github.com/nor1t/SEMAFORI',
-    tags: ['IoT', 'Data Viz', 'Optimization'],
+    tags: ['React', 'IoT', 'Optimization'],
     featured: false,
   },
   {
@@ -173,7 +173,7 @@ export const EDUCATION = [
 
 export const STATS = [
   { value: 3, suffix: '+', label: 'Years Coding' },
-  { value: 47, suffix: 'k', label: 'Lines Shipped' },
+  { value: 100, suffix: 'k+', label: 'Lines Shipped' },
   { value: 15, suffix: '+', label: 'GitHub Projects' },
   { value: 12, suffix: '', label: 'Open Source' },
 ]

@@ -1,7 +1,11 @@
 import { FC } from 'react'
 import { EDUCATION } from '../constants'
 
-export const EducationSection: FC = () => {
+interface EducationSectionProps {
+  onCertificatesClick: () => void
+}
+
+export const EducationSection: FC<EducationSectionProps> = ({ onCertificatesClick }) => {
   return (
     <div style={{ maxWidth: '760px', margin: '0 auto', position: 'relative' }}>
       {/* Timeline line */}
@@ -125,6 +129,46 @@ export const EducationSection: FC = () => {
             </div>
           </div>
         ))}
+      </div>
+
+      {/* Certificates CTA Button */}
+      <div style={{ display: 'flex', justifyContent: 'center', marginTop: '2.5rem' }}>
+        <button
+          onClick={onCertificatesClick}
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '10px',
+            padding: '12px 28px',
+            background: 'var(--bg-card)',
+            border: '1px solid var(--yellow)',
+            borderRadius: '8px',
+            color: 'var(--yellow)',
+            fontFamily: 'var(--font-display)',
+            fontSize: '0.8rem',
+            fontWeight: 600,
+            letterSpacing: '0.08em',
+            cursor: 'pointer',
+            transition: 'all 0.3s ease',
+            textTransform: 'uppercase',
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.background = 'rgba(255,225,77,0.08)'
+            e.currentTarget.style.borderColor = 'var(--yellow)'
+            e.currentTarget.style.boxShadow = '0 0 24px rgba(255,225,77,0.15)'
+            e.currentTarget.style.transform = 'translateY(-2px)'
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.background = 'var(--bg-card)'
+            e.currentTarget.style.borderColor = 'var(--yellow)'
+            e.currentTarget.style.boxShadow = 'none'
+            e.currentTarget.style.transform = 'translateY(0)'
+          }}
+        >
+          <i className="fa-solid fa-certificate" style={{ fontSize: '1rem' }}></i>
+          View Certificates
+          <i className="fa-solid fa-arrow-right" style={{ fontSize: '0.7rem' }}></i>
+        </button>
       </div>
     </div>
   )

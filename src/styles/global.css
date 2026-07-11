@@ -206,7 +206,7 @@ body::after {
   height: 120px;
   border-radius: 50%;
   padding: 3px;
-  background: conic-gradient(var(--green), var(--cyan), var(--pink), var(--green));
+  background: conic-gradient(var(--cyan), #00e5ff, #00b8d4, var(--cyan));
   position: relative;
 }
 

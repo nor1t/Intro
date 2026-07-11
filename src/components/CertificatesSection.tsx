@@ -28,155 +28,204 @@ const CERTIFICATES: Certificate[] = [
   },
   {
     id: 3,
+    title: 'Debate Club Certificate "Lets Debate Change" Project',
+    issuer: 'SOLIDAR.Suisse/Teach For Kosova',
+    description:
+      'Successfully completed the Debate Club sessions and activities as part of the "Lets Debate Change" project, funded by Solidar Suisse. This program provided structured training in public speaking, critical thinking, and constructive debate within a professional learning environment. Through interactive debates, teamwork, and evidence-based argumentation, I significantly strengthened my communication, presentation, and active listening skills. The experience also enhanced my confidence in expressing ideas clearly, engaging in respectful discussions, and collaborating effectively with diverse groups.',
+    image: '/certificates/3.jpeg',
+  },
+    {
+    id: 4,
+    title: 'Green Summer School 2025: EcoFix',
+    issuer: 'giz/German Cooperation',
+    description:
+      'Participated in the five-day Green Summer School 2025 EcoFix, where I collaborated with participants from across the Balkan region on topics related to environmental sustainability and electronic waste (e-waste) management. The program provided valuable hands-on and collaborative learning experiences, including presenting project ideas, assembling and troubleshooting computer hardware, and exploring practical approaches to reducing and recycling e-waste. Working in multicultural teams strengthened my communication, teamwork, and presentation skills while exposing me to diverse perspectives and innovative solutions for environmental challenges.',
+    image: '/certificates/4.jpeg',
+  },
+  {
+    id: 5,
+    title: 'Soft Skills and Employability Training Certificate',
+    issuer: 'European Union/UNDP',
+    description:
+      'Successfully completed training focused on developing essential soft skills and enhancing employability. The program strengthened my professional communication, teamwork, problem-solving, leadership, and time management abilities while providing practical insights into workplace expectations and career development. Through interactive activities and real-world scenarios, I improved my confidence in interviews, professional networking, and presenting ideas effectively. This training equipped me with the interpersonal and professional competencies needed to collaborate efficiently, adapt to dynamic work environments, and contribute effectively to multidisciplinary teams.',
+    image: '/certificates/5.jpeg',
+  },
+  {
+    id: 6,
+    title: 'Volunteer Trainer "Play Unified" Program, 20 Hours',
+    issuer: 'Olimpiada Speciale Kosovë',
+    description:
+      'Recognized for contributing as a volunteer trainer during the successful implementation of the "Play Unified"  program, which promotes inclusive sports by bringing together individuals with and without intellectual disabilities. Through this experience, I developed strong leadership, communication, and teamwork skills while supporting participants in a positive and inclusive environment. Beyond mentoring, the program also gave me opportunities to strengthen my technical abilities by assisting with digital tools and coding-related tasks used to support program activities and event organization. This experience reinforced the importance of combining technical skills with social impact, demonstrating how technology and collaboration can contribute to more inclusive communities.',
+    image: '/certificates/6.jpeg',
+  },
+
+  {
+    id: 7,
     title: 'Python Data Fundamentals',
     issuer: 'DataCamp',
     description:
       'Covers the foundational concepts of working with data in Python, including data types, structures, basic operations with NumPy and pandas, and introductory data manipulation techniques essential for any data-driven role.',
-    image: '/certificates/3.png',
-  },
-  {
-    id: 4,
-    title: 'Cleaning Data with PySpark',
-    issuer: 'DataCamp',
-    description:
-      'Focuses on cleaning and preparing large-scale datasets using PySpark. Covers handling missing values, casting data types, filtering, deduplication, and applying transformations across distributed DataFrames efficiently.',
-    image: '/certificates/4.png',
-  },
-  {
-    id: 6,
-    title: 'End-to-End Machine Learning',
-    issuer: 'DataCamp',
-    description:
-      'Walks through the complete machine learning pipeline — from data collection, cleaning, and exploratory analysis to feature engineering, model training, evaluation, hyperparameter tuning, and deploying a working ML solution.',
-    image: '/certificates/6.png',
-  },
-  {
-    id: 7,
-    title: 'Exploratory Data Analysis in Python',
-    issuer: 'DataCamp',
-    description:
-      'Teaches systematic approaches to exploring and visualizing datasets using pandas, matplotlib, and seaborn. Emphasizes identifying patterns, detecting outliers, and forming hypotheses before modeling.',
     image: '/certificates/7.png',
   },
   {
     id: 8,
-    title: 'Feature Engineering for Machine Learning in Python',
+    title: 'Cleaning Data with PySpark',
     issuer: 'DataCamp',
     description:
-      'Deep dive into creating and selecting predictive features from raw data. Covers encoding categorical variables, scaling numerical features, generating polynomial and interaction features, and handling time-based data.',
+      'Focuses on cleaning and preparing large-scale datasets using PySpark. Covers handling missing values, casting data types, filtering, deduplication, and applying transformations across distributed DataFrames efficiently.',
     image: '/certificates/8.png',
   },
   {
     id: 9,
-    title: 'Feature Engineering with PySpark',
+    title: 'End-to-End Machine Learning',
     issuer: 'DataCamp',
     description:
-      'Applies feature engineering techniques at scale using PySpark. Covers StringIndexer, OneHotEncoder, VectorAssembler, StandardScaler, and pipeline construction for distributed machine learning workflows.',
+      'Walks through the complete machine learning pipeline — from data collection, cleaning, and exploratory analysis to feature engineering, model training, evaluation, hyperparameter tuning, and deploying a working ML solution.',
     image: '/certificates/9.png',
   },
   {
     id: 10,
-    title: 'Intermediate Python',
+    title: 'Exploratory Data Analysis in Python',
     issuer: 'DataCamp',
     description:
-      'Builds on basic Python knowledge with topics including list comprehensions, lambda functions, error handling, iterators, generators, and object-oriented programming patterns for writing clean, efficient code.',
+      'Teaches systematic approaches to exploring and visualizing datasets using pandas, matplotlib, and seaborn. Emphasizes identifying patterns, detecting outliers, and forming hypotheses before modeling.',
     image: '/certificates/10.png',
   },
   {
     id: 11,
-    title: 'Introduction to Data Visualization with Seaborn',
+    title: 'Feature Engineering for Machine Learning in Python',
     issuer: 'DataCamp',
     description:
-      'Covers creating informative statistical graphics using Seaborn, including distribution plots, relational plots, categorical plots, and customizing aesthetics. Emphasizes communicating insights through visual storytelling.',
+      'Deep dive into creating and selecting predictive features from raw data. Covers encoding categorical variables, scaling numerical features, generating polynomial and interaction features, and handling time-based data.',
     image: '/certificates/11.png',
   },
   {
     id: 12,
-    title: 'Introduction to Databricks SQL',
+    title: 'Feature Engineering with PySpark',
     issuer: 'DataCamp',
     description:
-      'Introduces querying and analyzing data on the Databricks platform using SQL. Covers writing efficient queries, managing databases and tables, using built-in functions, and building dashboards within Databricks SQL.',
+      'Applies feature engineering techniques at scale using PySpark. Covers StringIndexer, OneHotEncoder, VectorAssembler, StandardScaler, and pipeline construction for distributed machine learning workflows.',
     image: '/certificates/12.png',
   },
   {
     id: 13,
-    title: 'Introduction to dbt',
+    title: 'Intermediate Python',
     issuer: 'DataCamp',
     description:
-      'Covers the fundamentals of dbt (data build tool) for transforming data in modern analytics workflows. Includes writing models, managing dependencies, testing data quality, generating documentation, and deploying data pipelines.',
+      'Builds on basic Python knowledge with topics including list comprehensions, lambda functions, error handling, iterators, generators, and object-oriented programming patterns for writing clean, efficient code.',
     image: '/certificates/13.png',
   },
   {
     id: 14,
-    title: 'Introduction to PySpark',
+    title: 'Introduction to Data Visualization with Seaborn',
     issuer: 'DataCamp',
     description:
-      'Introduces distributed data processing with PySpark. Covers the Spark architecture, Resilient Distributed Datasets (RDDs), DataFrames, basic transformations, actions, and SQL queries on large-scale data.',
+      'Covers creating informative statistical graphics using Seaborn, including distribution plots, relational plots, categorical plots, and customizing aesthetics. Emphasizes communicating insights through visual storytelling.',
     image: '/certificates/14.png',
   },
   {
     id: 15,
-    title: 'Introduction to Python',
+    title: 'Introduction to Databricks SQL',
     issuer: 'DataCamp',
     description:
-      'A beginner-friendly introduction to Python programming. Covers variables, data types, lists, dictionaries, loops, conditional statements, functions, and basic scripting — laying the groundwork for data science and automation.',
+      'Introduces querying and analyzing data on the Databricks platform using SQL. Covers writing efficient queries, managing databases and tables, using built-in functions, and building dashboards within Databricks SQL.',
     image: '/certificates/15.png',
   },
   {
     id: 16,
-    title: 'Introduction to Statistics in Python',
+    title: 'Introduction to dbt',
     issuer: 'DataCamp',
     description:
-      'Covers core statistical concepts and their implementation in Python. Topics include descriptive statistics, probability distributions, sampling methods, hypothesis testing, confidence intervals, and correlation analysis.',
+      'Covers the fundamentals of dbt (data build tool) for transforming data in modern analytics workflows. Includes writing models, managing dependencies, testing data quality, generating documentation, and deploying data pipelines.',
     image: '/certificates/16.png',
   },
   {
     id: 17,
-    title: 'Joining Data with pandas',
+    title: 'Introduction to PySpark',
     issuer: 'DataCamp',
     description:
-      'Focuses on combining multiple datasets using pandas merge, join, and concatenation operations. Covers inner, outer, left, and right joins, handling duplicate keys, multi-index joins, and merging on indexes.',
+      'Introduces distributed data processing with PySpark. Covers the Spark architecture, Resilient Distributed Datasets (RDDs), DataFrames, basic transformations, actions, and SQL queries on large-scale data.',
     image: '/certificates/17.png',
   },
   {
     id: 18,
-    title: 'Introduction to Machine Learning with PySpark',
+    title: 'Introduction to Python',
     issuer: 'DataCamp',
     description:
-      'Introduces building machine learning models at scale with PySpark MLlib. Covers classification, regression, clustering, and recommendation systems using Spark\'s distributed ML pipeline API on large datasets.',
+      'A beginner-friendly introduction to Python programming. Covers variables, data types, lists, dictionaries, loops, conditional statements, functions, and basic scripting — laying the groundwork for data science and automation.',
     image: '/certificates/18.png',
   },
   {
     id: 19,
-    title: 'Preprocessing for Machine Learning in Python',
+    title: 'Introduction to Statistics in Python',
     issuer: 'DataCamp',
     description:
-      'Covers essential data preprocessing steps before modeling: handling missing data, encoding categorical features, scaling and normalization, train-test splitting, and building reusable preprocessing pipelines with scikit-learn.',
+      'Covers core statistical concepts and their implementation in Python. Topics include descriptive statistics, probability distributions, sampling methods, hypothesis testing, confidence intervals, and correlation analysis.',
     image: '/certificates/19.png',
   },
   {
     id: 20,
-    title: 'Supervised Learning with scikit-learn',
+    title: 'Joining Data with pandas',
     issuer: 'DataCamp',
     description:
-      'Comprehensive coverage of supervised machine learning using scikit-learn. Includes linear and logistic regression, decision trees, support vector machines, ensemble methods, model evaluation metrics, and cross-validation techniques.',
+      'Focuses on combining multiple datasets using pandas merge, join, and concatenation operations. Covers inner, outer, left, and right joins, handling duplicate keys, multi-index joins, and merging on indexes.',
     image: '/certificates/20.png',
   },
   {
     id: 21,
-    title: 'Understanding Machine Learning',
+    title: 'Introduction to Machine Learning with PySpark',
     issuer: 'DataCamp',
     description:
-      'A conceptual introduction to machine learning covering the distinction between supervised, unsupervised, and reinforcement learning. Explains core concepts like overfitting, bias-variance tradeoff, and the ML workflow without heavy math.',
+      'Introduces building machine learning models at scale with PySpark MLlib. Covers classification, regression, clustering, and recommendation systems using Spark\'s distributed ML pipeline API on large datasets.',
     image: '/certificates/21.png',
   },
   {
     id: 22,
+    title: 'Preprocessing for Machine Learning in Python',
+    issuer: 'DataCamp',
+    description:
+      'Covers essential data preprocessing steps before modeling: handling missing data, encoding categorical features, scaling and normalization, train-test splitting, and building reusable preprocessing pipelines with scikit-learn.',
+    image: '/certificates/22.png',
+  },
+  {
+    id: 23,
+    title: 'Supervised Learning with scikit-learn',
+    issuer: 'DataCamp',
+    description:
+      'Comprehensive coverage of supervised machine learning using scikit-learn. Includes linear and logistic regression, decision trees, support vector machines, ensemble methods, model evaluation metrics, and cross-validation techniques.',
+    image: '/certificates/23.png',
+  },
+  {
+    id: 24,
+    title: 'Understanding Machine Learning',
+    issuer: 'DataCamp',
+    description:
+      'A conceptual introduction to machine learning covering the distinction between supervised, unsupervised, and reinforcement learning. Explains core concepts like overfitting, bias-variance tradeoff, and the ML workflow without heavy math.',
+    image: '/certificates/24.png',
+  },
+  {
+    id: 25,
     title: 'Unsupervised Learning in Python',
     issuer: 'DataCamp',
     description:
       'Explores unsupervised machine learning techniques including k-means and hierarchical clustering, principal component analysis (PCA) for dimensionality reduction, and t-SNE for visualizing high-dimensional data in Python.',
-    image: '/certificates/22.png',
+    image: '/certificates/25.png',
+  },
+  {
+    id: 26,
+    title: 'Gratitude for success achieved in FOOTBALL',
+    issuer: 'Fushë-Kosova Municipality',
+    description:
+      'Honored by the municipality of Fushë-Kosova in recognition of my dedication, achievements, and contributions in football. Competing in a team-oriented environment taught me the value of discipline, collaboration, and responsibility. Football showed me that success is built through trust, communication, and supporting teammates toward a common goal. These lessons directly influence my approach to software development, where I enjoy collaborating with developers, sharing knowledge, and contributing to projects that require strong teamwork to achieve successful outcomes.',
+    image: '/certificates/26.jpeg',
+  },
+  {
+    id: 27,
+    title: 'Gratitude for the contribution given in the club',
+    issuer: 'SH.F. "Kosovari"',
+    description:
+      'Recognized by my football club for more than a decade of loyalty, dedication, and contribution to the team (2010-2022). This long-term commitment reflects my belief in giving my best to every team I am part of. Whether on the football field or in software development, I value commitment, consistency, and helping others succeed. I bring the same mindset to coding by actively supporting teammates, sharing solutions, and working collaboratively to overcome challenges and deliver high-quality results. I believe that collective success is always more meaningful than individual achievement.',
+    image: '/certificates/27.jpeg',
   },
 ]
 

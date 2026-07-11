@@ -1,7 +1,7 @@
 import { FC, useEffect, useState } from 'react'
 
 export const NavDots: FC = () => {
-  const sections = ['hero', 'stats', 'about', 'skills', 'projects', 'education', 'contact']
+  const sections = ['hero', 'about', 'skills', 'projects', 'education', 'contact']
   const [active, setActive] = useState('hero')
 
   useEffect(() => {

@@ -97,7 +97,7 @@ export const PROJECTS = [
   {
     name: 'smartBINS',
     tagline: 'Monitor waste levels in bins and optimize collection routes',
-    description: 'By creating an application that uses IoT sensors to monitor waste levels in bins and optimize collection routes, improving urban sanitation efficiency',
+    description: 'By creating an application that uses IoT sensors to monitor waste levels in bins and optimize collection routes, improving urban sanitation efficiency.',
     language: 'HTML/CSS/JS',
     languageColor: '#c86830',
     stars: 0,

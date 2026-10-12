@@ -87,8 +87,8 @@ const NORIT = {
 ## 🔗 Connect
 
 <p align="center">
-  <a href="https://nor1t.vercel.app/">
-    <img height="40" src="https://img.shields.io/badge/Portfolio-nor1t.vercel.app-00ff88?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0a0a0f" />
+  <a href="https://norit.app/">
+    <img height="40" src="https://img.shields.io/badge/Portfolio-norit.app-00ff88?style=for-the-badge&logo=web&logoColor=white&labelColor=0a0a0f" />
   </a>
   <a href="https://www.linkedin.com/in/noriti/">
     <img height="40" src="https://img.shields.io/badge/LinkedIn-noriti-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0a0a0f" />

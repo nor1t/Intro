@@ -17,10 +17,10 @@ export const ABOUT = {
   tag: '// IDENTITY.LOG',
   title: 'ABOUT ME',
   paragraphs: [
-    "I'm a full-stack engineer based in Kosovo with a passion for building web and mobile applications that are reliable, performant, and enjoyable to use. I enjoy working across the entire stack, from designing intuitive user interfaces to building the backend systems that power them.",
-    "My primary frontend tools are React, React Native, and TypeScript, where I focus on creating responsive, accessible, and maintainable applications. On the backend, I work with C#, Node.js, and SQL to develop scalable APIs and data-driven systems. I value clean architecture, strong typing, and writing code that's easy to understand and maintain.",
-    "I'm also interested in data engineering and machine learning. I've worked with Python and PySpark on projects involving data processing, analytics, and experimentation, and I enjoy finding practical ways to bring data-driven features into real products. For me, every project is an opportunity to improve my skills and explore new technologies.",
-    "Outside of work, I like experimenting with new tools and frameworks, contributing to open-source projects when I can, and sharing knowledge with other developers in the local community. I believe the best software comes from people who keep learning, collaborate well, and take pride in building things that last.",
+    "Full-stack engineer in Kosovo passionate about building reliable, performant, enjoyable web and mobile apps, from intuitive UIs to the backend systems behind them.",
+    "Frontend: React, React Native, TypeScript for responsive, accessible, maintainable apps. Backend: C#, Node.js, SQL for scalable APIs and data-driven systems. I value clean architecture, strong typing, and readable, maintainable code.",
+    "Also into data engineering and ML, worked with Python and PySpark on data processing, analytics, and experimentation, and enjoy bringing data-driven features into real products. Every project is a chance to grow and explore new tech.",
+    "Outside work, I experiment with new tools and frameworks, contribute to open source, and share knowledge with the local dev community. I believe the best software comes from people who keep learning, collaborate well, and take pride in building things that last.",
   ],
   highlights: [
     { icon: 'fa-solid fa-rocket', label: 'End-to-end shipping', value: 'From idea to production' },
@@ -152,6 +152,14 @@ export const EDUCATION = [
     description: 'Studied software engineering fundamentals, algorithms, databases, and distributed systems. Final project focused on real-time  applications and data visualization.',
     icon: 'fa-solid fa-graduation-cap',
     color: 'var(--green)',
+  },
+  {
+    institution: 'University "Isa Boletini" in Mitrovica',
+    degree: 'MSc in Cloud and Edge Computing',
+    period: '2026 — Present',
+    description: 'Pursuing advanced studies in cloud computing, edge computing, and distributed systems. Focused on building scalable, high-performance applications and exploring emerging technologies in the cloud ecosystem.',
+    icon: 'fa-solid fa-graduation-cap',
+    color: 'var(--cyan)',
   },
   {
     institution: 'Online Certifications & Bootcamps',
